@@ -11,7 +11,7 @@ class Contact extends Component {
   };
 
   render() {
-    const { id, name, age, email } = this.props.contact;
+    const { id, name, phone, email } = this.props.contact;
     const { showContactInfo } = this.state;
     return (
       <Consumer>
@@ -39,7 +39,7 @@ class Contact extends Component {
               {showContactInfo ? (
                 <ul className="list-group">
                   <li className="list-group-item">Email: {email}</li>
-                  <li className="list-group-item">Age: {age}</li>
+                  <li className="list-group-item">Phone: {phone}</li>
                 </ul>
               ) : null}
             </div>
